@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.17.202106211030-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_6_Inyeccion_por_Constructor.xml</config>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_8_Beans_Anidados.xml</config>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_11_Autowire.xml</config>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_18_Uso_de_interfaces.xml</config>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_21_Stereotypes.xml</config>
+		<config>main/resources/com/luis/xml/Beans22.xml</config>
+		<config>main/resources/com/luis/xml/beans23.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

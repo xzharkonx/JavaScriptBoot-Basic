@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Inyección por Constructor -->
+
+<!-- Creamos un Bean para poder definir Persona6. -->
+<!-- Ahora definiremos las etiquetas de "constructor-arg" para darle los valores por medio del Constructor.
+	 Le indicamos los valores.  -->
+	 
+<!-- El atributo type es opcional, nos ayudará cuando tengamos más de un constructor similar a otro con
+	 los mismos parametros pero diferentes tipos de datos. -->
+	 
+<!-- El atributo index es opcional, nos ayudará cuando tengamos más de un constructor similar a otro con
+	 los mismos parametros o diferentes tipos de datos. Así podremos elegir la posición en la cuál estarán. -->	 
+	 
+	<bean id="persona6" class="com.luis.beans.Persona6">
+		<constructor-arg type="int" index="0" value="2021"></constructor-arg>
+		<constructor-arg type="String" index="1" value="Luis Eduardo"></constructor-arg>
+		<constructor-arg type="String" index="2" value="Ingeniero"></constructor-arg>
+	</bean>
+
+
+<!-- Depende de como construamos nuestro constructor, dependerán los datos que se hayan instanciado. -->
+
+</beans>

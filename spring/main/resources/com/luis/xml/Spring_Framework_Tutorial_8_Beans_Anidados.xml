@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="persona7" class="com.luis.beans.Persona7" name="persona">
+	<property name="id" value="1"></property>
+	<property name="nombre" value="Luis"></property>
+	<property name="apodo" value="Zharkon"></property>
+	<property name="pais">
+		<bean id="pais" class="com.luis.beans.Pais">
+			<property name="nombre" value="Mexico"></property>
+			<property name="ciudad">
+				<list>
+					<ref bean="ciudad1"/>
+					<ref bean="ciudad2"/>
+					<ref bean="ciudad3"/>
+				</list>
+			</property>
+		</bean>
+	</property>
+</bean>
+
+<bean id="ciudad1" class="com.luis.beans.Ciudad">
+	<property name="nombre" value="Edo Mex"></property>
+</bean>
+<bean id="ciudad2" class="com.luis.beans.Ciudad">
+	<property name="nombre" value="Guadalajara"></property>
+</bean>
+<bean id="ciudad3" class="com.luis.beans.Ciudad">
+	<property name="nombre" value="Tabasco"></property>
+</bean>
+<alias name="persona7" alias="persona7Bean"></alias>
+</beans>

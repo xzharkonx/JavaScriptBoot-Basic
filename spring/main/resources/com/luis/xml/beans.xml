@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Aquí es donde nosotros vamos a registrar este Objeto Mundo en el contenedor para
+	 poder invocarlo a medida que lo usemos en nuestra aplicación. Con la etiqueta bean.-->
+
+<!-- Adicionalmente podemos agregar los valores por defecto de esta Clase. 
+	 El atributo se llama saludo, por lo que Spring va a ser la invocación al
+	 método getSaludo, pero ya no es necesario escribir getSaludo, si no el nombre del atributo.
+	 Spring va a buscarlo a travez de método set y va a devolverlo a travez del método get.   -->
+
+<bean id="mundo" class="com.luis.beans.Mundo1">
+<property name="saludo" value="Hola Mundo!"></property>
+</bean>
+
+
+<!-- Otro ejemplo pero este se hizo con anotaciones -->
+<!-- <bean id="estrella" class="com.luis.beans.Estrella">
+<property name="nombre" value="Hola Mundo!"></property>
+</bean> -->
+
+
+</beans>
