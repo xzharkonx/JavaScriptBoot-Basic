@@ -1,6 +1,6 @@
 package com.luis.beans;
 
-public class Ciudad {
+public class Ciudad7 {
 
 	private String nombre;
 

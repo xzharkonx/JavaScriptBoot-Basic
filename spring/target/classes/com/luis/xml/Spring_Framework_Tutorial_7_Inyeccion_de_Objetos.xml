@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Tema 7. Inyección de Objetos -->
+
+	<!-- Para asociar el Objeto Pais7 dentro del Objeto Persona7 agregamos una propiedad con el nombre de la 
+		 variable del Objeto que hemos colocado.-->
+	<!-- Luego haremos una referencia con el id del bean de pais (la variable del Objeto que le pasamos) -->
+
+	<bean id="persona7" class="com.luis.beans.Persona7">
+	
+		<property name="id" value="1"></property>
+		<property name="nombre" value="luis"></property>
+		<property name="apodo" value="Inge"></property>
+		
+		<property name="pais" ref="pais7"></property>
+	</bean>
+	
+	<!-- Bean de Pais -->
+	<!-- Hacemos una referencia a la Ciudad -->
+	
+	<bean id="pais7" class="com.luis.beans.Pais7">
+		<property name="nombre" value="México"></property>
+		
+		<property name="ciudad" ref="ciudad1"></property>
+	</bean>
+
+	<!-- Bean de Ciudad -->
+
+	<bean id="ciudad1" class="com.luis.beans.Ciudad7">
+		<property name="nombre" value="Edo Mex"></property>
+	</bean>
+	
+	<!-- Tema 8. Referencia a Beans Anidados. -->
+	
+	<!-- En vez de hacer la referencia al Bean Ciudad, lo colocaremos dentro de la propiedad 
+		 Y de igual forma pasa lo mismo con el Pais para las personas.-->
+	<!-- Tendremos que quitar el atributo de la referencia -->
+	
+	<!-- Obtendremos el mismo resultado pero más simplificado (depende como uno quiera ordenar el codigo -->
+	
+	
+	<!-- <bean id="persona7" class="com.luis.beans.Persona7">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="luis"></property>
+		<property name="apodo" value="Inge"></property>
+		
+		<property name="pais">
+			<bean id="pais7" class="com.luis.beans.Pais7">
+				<property name="nombre" value="México"></property>
+				
+				<property name="ciudad">
+					<bean id="ciudad1" class="com.luis.beans.Ciudad7">
+						<property name="nombre" value="Edo Mex"></property>
+					</bean>
+				</property>
+			</bean>
+		</property>
+	</bean> -->
+	
+</beans>

@@ -2,10 +2,10 @@ package com.luis.beans;
 
 import java.util.List;
 
-public class Pais {
+public class Pais8 {
 
 	private String nombre;
-	private List<Ciudad> ciudad;
+	private List<Ciudad7> ciudad;
 
 	public String getNombre() {
 		return nombre;
@@ -15,11 +15,11 @@ public class Pais {
 		this.nombre = nombre;
 	}
 
-	public List<Ciudad> getCiudad() {
+	public List<Ciudad7> getCiudad() {
 		return ciudad;
 	}
 
-	public void setCiudad(List<Ciudad> ciudad) {
+	public void setCiudad(List<Ciudad7> ciudad) {
 		this.ciudad = ciudad;
 	}
 

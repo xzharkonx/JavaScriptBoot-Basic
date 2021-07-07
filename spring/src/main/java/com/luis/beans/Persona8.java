@@ -1,10 +1,10 @@
 package com.luis.beans;
 
-public class Persona7 {
+public class Persona8 {
 	private int id;
 	private String nombre;
 	private String apodo;
-	private Pais7 pais;
+	private Pais8 pais;
 
 	
 
@@ -32,11 +32,11 @@ public class Persona7 {
 		this.apodo = apodo;
 	}
 
-	public Pais7 getPais() {
+	public Pais8 getPais() {
 		return pais;
 	}
 
-	public void setPais(Pais7 pais) {
+	public void setPais(Pais8 pais) {
 		this.pais = pais;
 	}
 	

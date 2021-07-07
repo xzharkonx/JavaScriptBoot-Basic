@@ -12,7 +12,7 @@
 	 Spring va a buscarlo a travez de método set y va a devolverlo a travez del método get.   -->
 
 <bean id="mundo" class="com.luis.beans.Mundo1">
-<property name="saludo" value="Hola Mundo!"></property>
+	<property name="saludo" value="Hola Mundo!"></property>
 </bean>
 
 

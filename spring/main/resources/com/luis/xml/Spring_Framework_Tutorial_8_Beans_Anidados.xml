@@ -3,32 +3,41 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="persona7" class="com.luis.beans.Persona7" name="persona">
-	<property name="id" value="1"></property>
-	<property name="nombre" value="Luis"></property>
-	<property name="apodo" value="Zharkon"></property>
-	<property name="pais">
-		<bean id="pais" class="com.luis.beans.Pais">
-			<property name="nombre" value="Mexico"></property>
-			<property name="ciudad">
-				<list>
-					<ref bean="ciudad1"/>
-					<ref bean="ciudad2"/>
-					<ref bean="ciudad3"/>
-				</list>
-			</property>
-		</bean>
-	</property>
-</bean>
+	<!-- Tema 9. Referenciando Beans -->
+	<!-- Se le puede agregar el tag name para asignarle un alias adicional con el cuál podemos referenciar a este Bean -->
 
-<bean id="ciudad1" class="com.luis.beans.Ciudad">
-	<property name="nombre" value="Edo Mex"></property>
-</bean>
-<bean id="ciudad2" class="com.luis.beans.Ciudad">
-	<property name="nombre" value="Guadalajara"></property>
-</bean>
-<bean id="ciudad3" class="com.luis.beans.Ciudad">
-	<property name="nombre" value="Tabasco"></property>
-</bean>
-<alias name="persona7" alias="persona7Bean"></alias>
+	<bean id="persona8" class="com.luis.beans.Persona8" name="persona">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Luis"></property>
+		<property name="apodo" value="Zharkon"></property>
+		<property name="pais">
+			<bean id="pais" class="com.luis.beans.Pais8">
+				<property name="nombre" value="Mexico"></property>
+				<property name="ciudad">
+					<list>
+						<ref bean="ciudad1"/>
+						<ref bean="ciudad2"/>
+						<ref bean="ciudad3"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="ciudad1" class="com.luis.beans.Ciudad7">
+		<property name="nombre" value="Edo Mex"></property>
+	</bean>
+	<bean id="ciudad2" class="com.luis.beans.Ciudad7">
+		<property name="nombre" value="Guadalajara"></property>
+	</bean>
+	<bean id="ciudad3" class="com.luis.beans.Ciudad7">
+		<property name="nombre" value="Tabasco"></property>
+	</bean>
+
+	<!-- Tema 9. Referenciando Beans -->
+	<!-- El name vendrá a ser el id de algún Bean -->
+	<!-- El alias, será la nueva forma de nombrarlo/referenciarlo -->
+	<alias name="persona8" alias="persona8Bean"></alias>
+
+
 </beans>

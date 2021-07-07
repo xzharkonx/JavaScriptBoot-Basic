@@ -14,6 +14,7 @@
 		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_21_Stereotypes.xml</config>
 		<config>main/resources/com/luis/xml/Beans22.xml</config>
 		<config>main/resources/com/luis/xml/beans23.xml</config>
+		<config>main/resources/com/luis/xml/Spring_Framework_Tutorial_7_Inyeccion_de_Objetos.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

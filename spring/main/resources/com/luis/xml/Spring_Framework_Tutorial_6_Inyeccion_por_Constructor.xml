@@ -22,6 +22,6 @@
 	</bean>
 
 
-<!-- Depende de como construamos nuestro constructor, dependerán los datos que se hayan instanciado. -->
+<!-- Depende de como construyamos nuestro constructor, dependerán los datos que se hayan instanciado. -->
 
 </beans>
