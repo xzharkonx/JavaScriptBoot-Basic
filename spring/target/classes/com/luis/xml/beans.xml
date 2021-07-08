@@ -15,7 +15,6 @@
 	<property name="saludo" value="Hola Mundo!"></property>
 </bean>
 
-
 <!-- Otro ejemplo pero este se hizo con anotaciones -->
 <!-- <bean id="estrella" class="com.luis.beans.Estrella">
 <property name="nombre" value="Hola Mundo!"></property>

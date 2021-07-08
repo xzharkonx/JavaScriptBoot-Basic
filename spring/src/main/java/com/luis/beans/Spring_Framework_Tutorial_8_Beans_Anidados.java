@@ -17,7 +17,7 @@ public class Spring_Framework_Tutorial_8_Beans_Anidados {
 		
 		// Forma 2.Referenciada mediante el tag name en el Ben 
 		// Persona8 per = (Persona8) appContext.getBean("persona");
-		
+
 		// Forma normal de llamar al bean
 		Persona8 per = (Persona8) appContext.getBean("persona8");
 		

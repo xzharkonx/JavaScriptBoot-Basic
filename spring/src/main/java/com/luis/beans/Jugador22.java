@@ -1,11 +1,11 @@
 package com.luis.beans;
 
-import com.luis.interfaces.IEquipo;
+import com.luis.interfaces.IEquipo18;
 public class Jugador22 {
 
 	private int id;
 	private String nombre;
-	private IEquipo equipo;
+	private IEquipo18 equipo;
 	private Camiseta22 camiseta;
 	public int getId() {
 		return id;
@@ -19,10 +19,10 @@ public class Jugador22 {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public IEquipo getEquipo() {
+	public IEquipo18 getEquipo() {
 		return equipo;
 	}
-	public void setEquipo(IEquipo equipo) {
+	public void setEquipo(IEquipo18 equipo) {
 		this.equipo = equipo;
 	}
 	public Camiseta22 getCamiseta() {
